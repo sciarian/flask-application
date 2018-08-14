@@ -1,8 +1,11 @@
 ###
 # This prorgam is will contain all of the unit tests to test our application.
-# To run a unit test use the following command: 'python nameofut.ut.py -v'.
+# 
 # ***To run unit tests for this project head to the top level use command 'nose2'
 #    this will automatically find and run the units tests for this project.
+#
+#   *To run a regular unti test use the command 'python unit_test.ut.py -v'. 
+#
 ###
 
 #############

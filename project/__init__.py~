@@ -1,6 +1,8 @@
 ###
-#This file is used to show the python interpreter that it is a object and 
-#it creates the instance of the flask module (the app variable)
+#
+# This file is used to show the python interpreter that it is a object and 
+# it creates the instance of the flask module (the app variable).
+#
 ###
 
 
@@ -12,5 +14,9 @@ from flask import Flask
 ##############
 ### config ###
 ##############
-app = Flask(__name__)
+
+#Creates a flask application after the name of this module thats instance is relative
+#to what secret key is used in the configuration file.
+app = Flask(__name__, instance_relative_config=True)
 from . import views
+

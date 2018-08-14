@@ -48,6 +48,7 @@ class ProjectTests(unittest.TestCase):
 
     #Simple unit test used to test how to use unit tests
     def test_unit_test(self):
+        print("HURR IMMA UNIT TEST")
         self.assertTrue(True)
 
 

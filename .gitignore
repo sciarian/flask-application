@@ -1,0 +1,14 @@
+#Special file that tells git which files to ignore when staging and commiting code
+#I copied this from the flask tutorial that Billy sent me from:
+#http://www.patricksoftwareblog.com/version-control-using-git-and-gitlab/
+
+# Byte compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+#PyCharm files
+.idea/
+
+#Instance folder, used for configuration parameters
+/instance
