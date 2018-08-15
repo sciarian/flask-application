@@ -1,10 +1,16 @@
-###
+#########################################################################################
 #
-# This file is used to show the python interpreter that it is a object and 
-# it creates the instance of the flask module (the app variable).
+# This file like any other __init__.py file is used to show the python interpreter 
+# that it is a module. In addition to this code is added to create a instace of 
+# the flask application and the configuration file used for the instance. This file
+# is also used to import all of the views for the program.
 #
-###
-
+# @Author Anthony Sciarini
+# @Version 8/15/2018
+# @Source http://www.patricksoftwareblog.com/creating-a-simple-flask-web-application/
+#         http://www.patricksoftwareblog.com/configuring-a-flask-application/
+#
+##########################################################################################
 
 ###############
 ### imports ###

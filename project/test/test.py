@@ -1,4 +1,4 @@
-###
+###########################################################################################
 #
 # This prorgam is will contain all of the unit tests to test our application.
 # 
@@ -6,8 +6,11 @@
 #    this will automatically find and run the units tests for this project.
 #
 # *To run a regular unit test use the command 'python unit_test.ut.py -v'. 
+# @Author Anthony Sciarini
+# @Version 8/15/2018
+# @Source http://www.patricksoftwareblog.com/setting-up-unit-testing-infrastructure/
 #
-###
+##########################################################################################
 
 #############
 ### Libs ####
