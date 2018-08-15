@@ -1,10 +1,11 @@
 ###
+#
 # This prorgam is will contain all of the unit tests to test our application.
 # 
-# ***To run unit tests for this project head to the top level use command 'nose2'
+# ***To run unit tests for this project head to the top level and use command 'nose2'
 #    this will automatically find and run the units tests for this project.
 #
-#   *To run a regular unti test use the command 'python unit_test.ut.py -v'. 
+# *To run a regular unit test use the command 'python unit_test.ut.py -v'. 
 #
 ###
 
@@ -18,7 +19,7 @@ from project import app     #Import the flask application instance for this proj
 #Unit test guidelines.
 #   -the directory containg the test cases should be named 'test'
 #   -all unit test should be in the format 'test_*.py'
-#    this is so the nose package can find the unit tests for us.
+#    this is so the nose2 package can find the unit tests for us.
 
 
 class ProjectTests(unittest.TestCase):
@@ -40,7 +41,7 @@ class ProjectTests(unittest.TestCase):
     ### Helper functions ###
     ########################
 
-    #TODO
+    #TODO TBD
 
     #############
     ### Tests ###
@@ -48,6 +49,7 @@ class ProjectTests(unittest.TestCase):
 
     #Simple unit test used to test how to use unit tests
     def test_unit_test(self):
+        print("Unit tests are functioning properly")
         self.assertTrue(True)
 
 
