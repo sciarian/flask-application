@@ -1,14 +1,46 @@
 <!DOCTYPE html>
-<html>
-	<body>
-		<h1>Fall 2018 - Winter 2019</h1>
+<!--This doc contains a table displaying the fall and winter course schedule for the year.-->
+<html lang="en">
+ <head>
+  <!--Meta Data-->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="2018-19 Course Schedule">
+  <meta name="author" content="Anthony Sciarini">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<!--Viewport is the users visible area of the web page.-->	
+  <!--Style Sheets-->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+ </head>
+ 	<!--Body-->
+	<body 
+	background="{{ url_for('static', filename='img/beach_background.jpg') }}">
+		<!--Headers-->
+		<h1> Fall 2018 - Winter 2019
+		  <div class="semester_select_menu">	   	
+		     <!--Select Semester Menu-->
+		     <!--TODO add onclick attribute and java script function-->
+		     <button class="drop_menu">Select Semester</button>
+		     <!--
+		     <div id="ddmenu" class="drop_down_content">
+			     <a href="#">Fall 2015 - Winter 2016</a>
+			     <a href="#">Fall 2016 - Winter 2017</a>
+			     <a href="#">Fall 2017 - Winter 2018</a>
+			     <a href="#">Fall 2018 - Winter 2019</a>
+	             </div>
+		     -->
+		  </div>
+
+		</h1> 
 		<h2>Fall Semester </h2>
+			<!--Table-->
 			<table style = "width:100%">
-				<tr>
-					<th>CRN</th>
+				<tr> <!--Table headers-->
+					<th id="test_id">CRN</th>
 					<th>Course</th>
 					<th>Title</th>
 					<th>Campus</th>
+					<th>Credits</th>
 					<th>Level</th>
 					<th>Start Date</th>
 					<th>End Date</th>
@@ -17,8 +49,83 @@
 					<th>Location</th>
 					<th>Instructor</th>
 				</tr>
+				<!--Course-->
+				<tr>
+					<td>1771</td>
+					<td>CIS 253 01</td>
+					<td>COBOL</td>
+					<td>Allendale</td>
+					<td>4.000</td>
+					<td>U</td>
+					<td>Aug 27, 2018</td>
+					<td>Dec 15, 2018</td>
+					<td>TR</td>
+					<td>4:00 pm - 5:50 pm</td>
+					<td>Mackinac Hall D2233</td>
+					<td>Hornik</td>
+				</tr>
+				<!--Course-->
+				<tr>
+					<td>28657</td>
+					<td>CIS 351 01</td>
+					<td>Computer Organization and Assembly Language</td>
+					<td>Allendale</td>
+					<td>4.000</td>
+					<td>U</td>
+					<td>Aug 27, 2018</td>
+					<td>Dec 15, 2018</td>
+					<td>MWF T</td>
+					<td>MWF 8:00 am - 8:50 am | T 1:00 pm - 2:50 pm</td>
+					<td>MWF Mackinac Hall B1118 | T Mackinac Hall A1105</td>
+					<td>Kurmas</td>
+				</tr>
+				<!--Course-->
+				<tr>
+					<td>24594</td>
+					<td>CIS 357 01</td>
+					<td>Mobile Application Development</td>
+					<td>Allendale</td>
+					<td>3.000</td>
+					<td>U</td>
+					<td>Aug 27, 2018</td>
+					<td>Dec 15, 2018</td>
+					<td>MWF</td>
+					<td>1:00 pm - 1:50pm</td>
+					<td>Mackinac Hall A1105</td>
+					<td>Engelsma</td>
+				</tr>
+				<!--Course-->
+				<tr>
+					<td>16977</td>
+					<td>ENG 386 01</td>
+					<td>Literary Responses to Death and Dying</td>
+					<td>Allendale</td>
+					<td>3.000</td>
+					<td>U</td>
+					<td>Aug 27, 2018</td>
+					<td>Dec 15, 2018</td>
+					<td>M</td>
+					<td>6:00pm - 8:50pm</td>
+					<td>Lake Huron Hall 122</td>
+					<td>Persoon</td>
+				</tr>
 			</table>
 		<h3>Winter Semester</h3>	
-			<p>TODO add table</p>
+			<table>
+				<tr>
+					<th>CRN</th>
+					<th>Course</th>
+					<th>Title</th>
+					<th>Campus</th>
+					<th>Credits</th>
+					<th>Level</th>
+					<th>Start Date</th>
+					<th>End Date</th>
+					<th>Days</th>
+					<th>Time</th>
+					<th>Location</th>
+					<th>Instructor</th>	
+				</tr>
+			</table>
 	</body>
 </html>

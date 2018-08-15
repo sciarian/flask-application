@@ -86,7 +86,7 @@ body{
 /*Set font, text size, text color, background color, and align button to the right*/
 button {
 	font-family: Verdana, "Arial Narrow", helvetica, "sans-serif";
-	font-style: Oblique;
+	font-style:  normal;
 	font-size: 20px;
 	color: NAVY;
 	background-color: SILVER;

@@ -1,0 +1,4 @@
+
+doskey css = vim C:\Users\Owner\dev\flaskenv\project\static\css\main.css
+doskey base= vim C:\Users\Owner\dev\flaskenv\project\templates\base.html
+doskey run = python run.py
