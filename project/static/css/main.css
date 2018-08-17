@@ -19,13 +19,18 @@ h1, h2, h3, table, th, td{
 	font-style:  normal;
 }
 
+/*Set the width of the headers and table*/
+h1,h2, h3,table{
+	width: 100%;
+}
+
 /*Set font size of headers*/
 h1, h2, h3{
 	font-size: 20px
 }
 
 table, th, td{
-	font-size: 15px;
+	font-size: 10px;
 }
 
 /*Set font size of table tags*/
@@ -39,7 +44,7 @@ table, th, td{
 h1, h2, h3{
 	font-family: Verdana, "Arial Narrow", helvetica, "sans-serif";
 	font-style: normal;
-	padding: 5px;
+	padding: 10px;
 	color: SILVER;
 	background-color: NAVY;
 }
@@ -93,6 +98,6 @@ button {
 	border-radius: 5px;
 
 	position: absolute;
-	right: 15px;
-	top: 16px; 
+	right: 5px;
+	top: 22px; 
 }

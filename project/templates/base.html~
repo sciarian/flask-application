@@ -17,10 +17,10 @@
 	background="{{ url_for('static', filename='img/beach_background.jpg') }}">
 		<!--Headers-->
 		<h1> Fall 2018 - Winter 2019
-		  <div class="semester_select_menu">	   	
+		  	   	
 		     <!--Select Semester Menu-->
 		     <!--TODO add onclick attribute and java script function-->
-		     <button class="drop_menu">Select Semester</button>
+		     <button class="drop_menu">Select Academic Year</button>
 		     <!--
 		     <div id="ddmenu" class="drop_down_content">
 			     <a href="#">Fall 2015 - Winter 2016</a>
@@ -29,12 +29,10 @@
 			     <a href="#">Fall 2018 - Winter 2019</a>
 	             </div>
 		     -->
-		  </div>
-
 		</h1> 
 		<h2>Fall Semester </h2>
 			<!--Table-->
-			<table style = "width:100%">
+			<table>
 				<tr> <!--Table headers-->
 					<th id="test_id">CRN</th>
 					<th>Course</th>

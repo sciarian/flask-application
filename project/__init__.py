@@ -9,6 +9,7 @@
 # @Version 8/15/2018
 # @Source http://www.patricksoftwareblog.com/creating-a-simple-flask-web-application/
 #         http://www.patricksoftwareblog.com/configuring-a-flask-application/
+#         https://exploreflask.readthedocs.io/en/latest/blueprints.html#where-do-you-put-them
 #
 ##########################################################################################
 
@@ -35,6 +36,12 @@ app.config.from_pyfile('flask.cfg')
     #(flask.cfg in this case) in the instance_path folder for loading
     #application confurations rather than the root directory of the project.
 
-#TODO what does this mean???
-from . import views
-    #This imports everything in the views dir, but why?
+##################
+### Blueprints ###
+##################
+from project.schedule.views import schedule_blueprint
+from project.add_class.views import add_class_blueprint
+
+# register the blueprints
+app.register_blueprint(schedule_blueprint)
+app.register_blueprint(add_class_blueprint)
