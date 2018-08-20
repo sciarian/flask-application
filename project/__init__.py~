@@ -16,7 +16,8 @@
 ###############
 ### imports ###
 ###############
-from flask import Flask
+from flask import Flask                 #Used to get instance of the flaks application.
+from flask_sqlalchemy import SQLAlchemy #Used to connect to database.
 
 ##############
 ### config ###
@@ -35,6 +36,9 @@ app.config.from_pyfile('flask.cfg')
     #Tells the flask application that it should refer to the given file name 
     #(flask.cfg in this case) in the instance_path folder for loading
     #application confurations rather than the root directory of the project.
+
+#Create a db object for the application
+db = SQLAlchemy(app)
 
 ##################
 ### Blueprints ###

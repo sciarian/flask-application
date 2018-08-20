@@ -26,6 +26,6 @@ add_class_blueprint = Blueprint('add_class', __name__, template_folder='template
 ##############
 
 #TODO Determine route and make html file for the class schedule.
-#@add_class_blueprint.rout('/')
+#@add_class_blueprint.route('/')
 #def add_class():
 #    return render_template('add_class.html')

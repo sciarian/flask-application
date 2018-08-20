@@ -13,8 +13,7 @@
   <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
  </head>
  	<!--Body-->
-	<body 
-	background="{{ url_for('static', filename='img/beach_background.jpg') }}">
+	<body>
 		<!--Headers-->
 		<h1> Fall 2018 - Winter 2019
 		  	   	
