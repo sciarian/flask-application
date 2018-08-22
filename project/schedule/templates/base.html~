@@ -27,8 +27,8 @@
 	<body>
 		<!--Nav Bar-->
 		<ul>
-			<li><a>Choose Year</li>
-			<li><a>Add Class</li>
+			<li>i<a>Choose Year</li>
+			<li><a href="http://127.0.0.1:5000/add_class">Add Class</li>
 			<li><a>About</li>
 		</ul>
 
