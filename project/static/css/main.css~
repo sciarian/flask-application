@@ -7,66 +7,6 @@
 /*Style table and headers*/
 /*************************/
 
-/*Add borders and fonts to table tags, page headers, and button*/
-h1, h2, h3, table, th, td{
-	border: 1px;
-	border-style: solid;
-	border-color: silver;
-	background-color: silver;
-	border-radius: 5px;
-	
-	font-family: Verdana, "Arial Narrow", helvetica, "sans-serif";
-	font-style:  normal;
-}
-
-/*Set the width of the headers and table*/
-h1,h2, h3,table{
-	width: 100%;
-}
-
-/*Set font size of headers*/
-h1, h2, h3{
-	font-size: 20px
-}
-
-table, th, td{
-	font-size: 10px;
-}
-
-/*Set font size of table tags*/
-
-/*Class to make corners round*/
-.rnd_corners {
-
-}
-
-/*Color page headers*/
-h1, h2, h3{
-	font-family: Verdana, "Arial Narrow", helvetica, "sans-serif";
-	font-style: normal;
-	padding: 10px;
-	color: SILVER;
-	background-color: NAVY;
-}
-
-/*Format table headers and data cells*/
-th, td{
-	padding: 5px;
-	text-align: left;
-}
-
-/*Color table headers background and text*/
-th{
-	color: SILVER ;
-	background-color: NAVY;
-}
-
-/*Color table data cells background text*/
-td{
-	color: AQUA;
-	background-color: BLACK;
-}
-
 /*******************/
 /*Set up background*/
 /*******************/
@@ -76,28 +16,19 @@ body, html{
 	height: 100%;
 }
 
+
 /*Load background image*/
+/*
 body{
-	background-image: url_for('static', filename='img/beach_background.jpg');
+	background-image: url("../img/beach_background.jpg"); 
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+*/
 
 /**********************/
 /*Style Drop Down Menu*/
 /**********************/
 
-/*Set font, text size, text color, background color, and align button to the right*/
-button {
-	font-family: Verdana, "Arial Narrow", helvetica, "sans-serif";
-	font-style: Oblique;
-	font-size: 20px;
-	color: NAVY;
-	background-color: SILVER;
-	border-radius: 5px;
-
-	position: absolute;
-	right: 5px;
-	top: 22px; 
-}
+/*TODO*/

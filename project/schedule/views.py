@@ -12,6 +12,7 @@
 # @Version 8/15/2018
 # @Source http://www.patricksoftwareblog.com/creating-a-simple-flask-web-application/
 #         http://www.patricksoftwareblog.com/using-blueprints-to-organize-your-application/
+#         http://www.patricksoftwareblog.com/templates-and-bootstrap/
 #
 ############################################################################################
 
@@ -21,6 +22,7 @@
 
 #Import render_template and Blueprint methods from the flask module
 from flask import render_template, Blueprint
+from project.models import Course
 
 ##############
 ### Config ###
@@ -36,4 +38,6 @@ schedule_blueprint = Blueprint('schedule', __name__, template_folder='templates'
 @schedule_blueprint.route('/')
 def index():
     #To send html docs in templates dir use "render_template('doc_name.html')"
-    return render_template('base.html')
+    #To grab all of the data from the database use ModelName.query.all()
+    all_courses = Course.query.all()
+    return render_template('base.html', courses = all_courses)

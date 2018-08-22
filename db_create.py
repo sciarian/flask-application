@@ -22,6 +22,9 @@ db.create_all()
 #Insert course data#
 ####################
 
+print(type(db))
+
+
 #2015 - 2016 Academic year
 
 
@@ -57,7 +60,7 @@ crs05 = Course(14463, "WRT 150 02", "Strategies in Writing", "Allendale", 4.000,
 
 #   Winter 2016
 s_d = "Jan 11, 2016"
-e_d = "Aor 30, 2016"
+e_d = "Apr 30, 2016"
 
 crs06  = Course(20408,"BIO 120 20", "General Biology I", "Allendale", 4.000, "U", 
                s_d, e_d, "MWF", "11:00 am - 11:50 am", 
@@ -236,12 +239,14 @@ crs41 = Course(32738, "CIS 467 02", "Computer Science Project", "Allendale", 3.0
                "Mackinac Hall D1117", "Adams","W19")
 
 
+#Delete all rows in table
+#db.session.query(Course).filter(Course.semester == "W16").delete()
 
 #Add all courses to data base - test with commit
 #db.session.add(crs01) # Added 
 #db.session.add(crs02) # Added
 #db.session.add(crs03) # Added
-#db.session.add(crs04  # Added
+#db.session.add(crs04) # Added
 #db.session.add(crs05) # Added
 #db.session.add(crs06) # Added
 #db.session.add(crs07) # Added
