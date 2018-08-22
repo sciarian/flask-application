@@ -3,6 +3,26 @@
  *	Manual refresh: In wbe page press -> ctrl AND Fn + f5 
  ***********************************************************************************/
 
+/****************/
+/*Set up Nav Bar*/
+/****************/
+ul {
+	list-style-type: NONE;
+	margin: 0;
+	padding: 0;
+
+	border: 10PX;
+	border-style: SOLID;
+	border-color: BLACK;
+}
+
+/*Make list horizontal*/
+li {
+	display: INLINE;
+	padding: 15PX;
+}
+
+
 /*************************/
 /*Style table and headers*/
 /*************************/
@@ -18,14 +38,14 @@ body, html{
 
 
 /*Load background image*/
-/*
+
 body{
 	background-image: url("../img/beach_background.jpg"); 
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-*/
+
 
 /**********************/
 /*Style Drop Down Menu*/

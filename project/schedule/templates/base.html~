@@ -25,7 +25,13 @@
  </head>
  	<!--Body-->
 	<body>
-		<!--Add split button to display classes-->
+		<!--Nav Bar-->
+		<ul>
+			<li>Choose Year</li>
+			<li>Add Class</li>
+			<li>About</li>
+		</ul>
+
 		<h2>Fall Semester </h2>
 
 		<table>

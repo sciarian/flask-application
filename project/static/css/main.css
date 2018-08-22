@@ -3,6 +3,27 @@
  *	Manual refresh: In wbe page press -> ctrl AND Fn + f5 
  ***********************************************************************************/
 
+/****************/
+/*Set up Nav Bar*/
+/****************/
+ul {
+	list-style-type: NONE;
+	margin: 0;
+	padding: 0;
+
+	border: 5PX;
+	border-style: SOLID;
+	border-color: BLACK;
+	border-radius: 20PX;
+}
+
+/*Make list horizontal*/
+li {
+	display: INLINE;
+	padding: 15PX;
+}
+
+
 /*************************/
 /*Style table and headers*/
 /*************************/
