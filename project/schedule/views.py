@@ -40,4 +40,4 @@ def index():
     #To send html docs in templates dir use "render_template('doc_name.html')"
     #To grab all of the data from the database use ModelName.query.all()
     all_courses = Course.query.all()
-    return render_template('base.html', courses = all_courses)
+    return render_template('schedule.html', courses = all_courses)
