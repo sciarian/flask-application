@@ -9,24 +9,86 @@
 ul {
 	list-style-type: NONE;
 	margin: 0;
-	padding: 0;
+	padding: 10;
 
 	border: 5PX;
 	border-style: SOLID;
-	border-color: BLACK;
+	border-color: SILVER;
 	border-radius: 20PX;
+	border-padding: 25PX;
 }
 
 /*Make list horizontal*/
 li {
 	display: INLINE;
-	padding: 15PX;
+	padding: 10PX;
 }
 
+/*Set up text*/
+ul, li, a{
+	font-family: Verdana, "Arial Narrow", helvetica, sans-serif;
+	font-style: normal;
+	font-size: 25PX;
+
+	/*Set up colors*/
+	color: SILVER;
+}
+
+/*Set background color*/
+ul{
+	background: NAVY;
+}
+
+/****************/
+/*Set up headers*/
+/****************/
+h2, h3{
+	/*Set up text*/
+	font-family: Verdana, "Arial Narrow", helvetica, sans-serif;
+	font-style: normal;
+	font-size: 25PX;
+	padding: 10PX;
+
+	/*Set up colors*/
+	color: SILVER;
+	background: NAVY;
+
+	/*Set up border*/
+	border: 5PX;
+	border-style: SOLID;
+	border-color: SILVER;
+	border-radius: 20PX;
+	border-padding: 25PX;
+}
 
 /*************************/
 /*Style table and headers*/
 /*************************/
+th, tr, td, thead, tbody, table {
+	/*Set up border*/
+	border: 5PX;
+	border-style: SOLID;
+	border-color: SILVER;
+	border-radius: 5PX;
+
+	/*Set up text*/
+	font-family: Verdana, "Arial Narrow", helvetica, sans-serif;
+	font-style: normal;
+	font-size: 15PX;
+}
+
+/*Set up colors*/
+th, thead {
+	background: NAVY;
+	color: SILVER;
+}
+
+tr, td, tbody {
+	background: BLACK;
+	color: AQUA;
+}	
+
+
 
 /*******************/
 /*Set up background*/
@@ -39,17 +101,11 @@ body, html{
 
 
 /*Load background image*/
-
-body{
+body, html{
 	background-image: url("../img/beach_background.jpg"); 
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-
-
-/**********************/
-/*Style Drop Down Menu*/
-/**********************/
 
 /*TODO*/

@@ -43,9 +43,15 @@ db = SQLAlchemy(app)
 ##################
 ### Blueprints ###
 ##################
-from project.schedule.views import schedule_blueprint
+from project.schedule.views import sr_schedule_blueprint
+from project.schedule.views import jr_schedule_blueprint
+from project.schedule.views import sp_schedule_blueprint
+form project.schedule.views import fr_schedule_blueprint
 from project.add_class.views import add_class_blueprint
 
 # register the blueprints
-app.register_blueprint(schedule_blueprint)
+app.register_blueprint(sr_schedule_blueprint)
+app.register_blueprint(jr_schedule_blueprint)
+app.register_blueprint(sp_schedule_blueprint)
+app.register_blueprint(fr_schedule_blueprint)
 app.register_blueprint(add_class_blueprint)

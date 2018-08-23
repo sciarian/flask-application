@@ -25,13 +25,12 @@
  </head>
  	<!--Body-->
 	<body>
-
 		<!--Nav Bar-->
 		<ul>
-			<li><a href="http://127.0.0.1:5000/fr_schedule">F15 - W16</a></li>
-			<li><a href="http://127.0.0.1:5000/sp_schedule">F16 - W17</a></li>
-			<li><a href="http://127.0.0.1:5000/jr_schedule">F17 - W18</a></li>
-			<li><a href="http://127.0.0.1:5000/">F18 - W19</a></li>
+			<li><a href="http://127.0.0.1:5000/fr_schedule">F15 - W16</li>
+			<li><a href="http://127.0.0.1:5000/sp_schedule">F16 - W17</li>
+			<li><a href="http://127.0.0.1:5000/jr_schedule">F17 - W18</li>
+			<li><a href="http://127.0.0.1:5000/">F18 - W19</li>
 			<li><a href="http://127.0.0.1:5000/add_class">Add Class</a></li>
 			<li>About</li>
 		</ul>

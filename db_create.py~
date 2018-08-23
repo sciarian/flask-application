@@ -173,23 +173,24 @@ crs28  = Course(27303, "CIS 343 02", "Structures of Programming Languages", "All
                 3.000, "U", s_d, e_d, "MWF", "3:00 pm - 3:50 pm", "Makcinac Hall B1118", 
                 "Woodring", "W18")
 
-crs29  = Course(27305, "CIS 353 01", "Database", "Allendale", 3.000, "U", s_d, e_d, "MWF", 
-             "12:00 pm - 12:50 pm", "Mackinac Hall B1118", "Alsabbagh", "F17")
+crs29  = Course(27323, "CIS 457 10", "Data Communications", "Allendale", 4.000, 
+                "U", s_d, e_d, "MWF", "2:00 pm - 2:50 pm", "Mackinac Hall D1117", 
+                "Kalafut", "W18")
 
-crs30  = Course(27323, "CIS 457 10", "Data Communications", "Allendale", 4.000, "U", s_d, e_d, 
-             "MWF", "2:00 pm - 2:50 pm", "Mackinac Hall D1117", "Kalafut", "W18")
+crs30  = Course(30171, "CIS 457 902", "Data Communications", "Allendale", 0.000, "U", 
+                s_d, e_d, "W", "10:00 am - 11:50 am", "Mackinac Hall A1167", 
+                "Kalafut", "W18")
 
-crs31  = Course(30171, "CIS 457 902", "Data Communications", "Allendale", 0.000, "U", 
-                s_d, e_d, "W", "10:00 am - 11:50 am", "Mackinac Hall A1167", "Kalafut", "W18")
-
-crs32  = Course(23260, "PSY 101 02", "Introductory Pyschology", "Allendale", 3.000, "U", 
+crs31  = Course(23260, "PSY 101 02", "Introductory Pyschology", "Allendale", 3.000, "U", 
                 s_d, e_d, "TR", "10:00 am - 11:15 am", "Lake Huron Hall 132", 
                 "Henderson", "W18")
 
-crs33  = Course(34420, "WRT 350 08", "SWS Business Communication", "Allendale", 3.000, "U", 
+crs32  = Course(34420, "WRT 350 08", "SWS Business Communication", "Allendale", 3.000, "U", 
                 s_d, e_d, "R | T", "1:00 pm - 2:15 pm", 
                 "Mackinac Hall A1121 | Mackinac Hall D1227",
                 "Dine", "W18")
+crs33  = Course(27305, "CIS 353 01", "Database", "Allendale", 3.000, "U", s_d, e_d, "MWF",
+                "12:00 pm - 12:50 pm", "Mackinac Hall B1118", "Alsabbagh", "W18")
 
 
 #2018 - 2019 Acadenic year 
@@ -240,8 +241,7 @@ crs41 = Course(32738, "CIS 467 02", "Computer Science Project", "Allendale", 3.0
 
 
 #Delete all rows in table
-#TODO
-db.session.query(Course).filter(Course.semester == "W16").delete()
+db.session.query(Course).filter(Course.title == "Database").delete()
 
 #Add all courses to data base - test with commit
 #db.session.add(crs01) # Added 
@@ -249,11 +249,11 @@ db.session.query(Course).filter(Course.semester == "W16").delete()
 #db.session.add(crs03) # Added
 #db.session.add(crs04) # Added
 #db.session.add(crs05) # Added
-db.session.add(crs06) # Added
-db.session.add(crs07) # Added
-db.session.add(crs08) # Added
-db.session.add(crs09) # Added
-db.session.add(crs10) # Added
+#db.session.add(crs06) # Added
+#db.session.add(crs07) # Added
+#db.session.add(crs08) # Added
+#db.session.add(crs09) # Added
+#db.session.add(crs10) # Added
 #db.session.add(crs11) # Added
 #db.session.add(crs12) # Added
 #db.session.add(crs13) # Added
@@ -276,7 +276,7 @@ db.session.add(crs10) # Added
 #db.session.add(crs30) # Added
 #db.session.add(crs31) # Added
 #db.session.add(crs32) # Added
-#db.session.add(crs33) # Added
+db.session.add(crs33) # Added
 #db.session.add(crs34) # Added
 #db.session.add(crs35) # Added
 #db.session.add(crs36) # Added
